@@ -1,0 +1,107 @@
+h1{
+       background-color:#e4aa20;
+       color:black;
+       padding:10px;
+       text-align: center;
+}
+/*remove marign*/
+header,nav {
+    margin: 0;
+    padding:0;
+}
+nav{
+    background-color:#66040c;
+    padding:3px 0;
+    text-align: center;
+    border-top: 1px solid #66040c;
+    }
+.nav-button {
+      display: inline-block;
+       padding: 10px 15px;
+       margin:5px;
+       background-color: #66040c;
+       color:whitesmoke;
+       text-decoration:none;
+       border:2px solid #b41d22;
+       border-radius:5px;
+       font-weight: bold;
+       font-size:16px;
+       transition: background-color 0.3s ease, color 0.3s ease;
+}
+/*remove spacing*/
+
+header h1{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 3em;
+}
+/*Hover effect*/
+.nav-button:hover {
+    background-color:#88393e;
+    color: white;
+    cursor:pointer;
+}
+
+/* To clean up list style and layout */
+nav ul{
+    list-style-type: none;
+    padding:0;
+    text-align:center;
+}
+nav li{
+    display:inline-block;
+    margin: 0 10px;
+}
+
+/*footer*/
+footer {
+  background-color: #66040c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #f2c94c;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+h2{
+    text-align:center;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight:bold;
+}
+
+
+/* Simple Grid for Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Section Styling */
+section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section h3 {
+  color: #66040c;
+  margin-top: 0;
+  
+}
+
+/* Mobile: Stack to 1 Column */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
